@@ -33,9 +33,9 @@ public class KitMenuItem extends MenuItem
 		List<String> str = new ArrayList<String>(getLore());
 		str.add(ChatColor.GOLD+"--------------------------");
 		if(kit.hasPermission(player))
-			str.add(ChatColor.GREEN+"UNLOCKED");
+			str.add(ChatColor.GREEN+"DESBLOQUEADO");
 		else
-			str.add(ChatColor.RED+"LOCKED");
+			str.add(ChatColor.RED+"BLOQUEADO");
 		return setNameAndLore(getIcon().clone(), getDisplayName(), str);
 	}
 	
